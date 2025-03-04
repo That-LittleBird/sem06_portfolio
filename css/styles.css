@@ -1,0 +1,122 @@
+/* ------------------------------------------------------------------------------------------
+BASE
+------------------------------------------------------------------------------------------ */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Averia Serif Libre", serif;
+    color: #eca136;
+    background-color: rgb(9, 26, 33);
+
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------------
+COMPONENTS
+------------------------------------------------------------------------------------------ */
+
+/* ----- Entête ----- */
+
+header .wrapper{
+    width: 1000px;
+    background-color: rgba(15, 38, 49, 95%);
+    border-radius: 0px 0px 20px 20px;
+    
+    position: fixed;
+    left: calc(50% - 500px);
+    top: 0;
+
+    z-index: 1;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    margin: 0;
+    height: 80px;
+}
+
+/* ----- Conteneur Principal ----- */
+
+.contenu{
+    max-width: 925px;
+
+    margin: 100px auto 0 auto;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+    position: relative;
+}
+
+.contenu img{
+    max-width: 100%;
+}
+
+.bouton{
+    background-color: rgba(100%, 100%, 100%, 50%);
+    border-bottom-left-radius: 5px;
+    
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+
+    cursor: none;
+}
+
+/* ----- Pied de Page ----- */
+
+footer .wrapper{
+    background-color: rgba(15, 38, 49, 95%);
+    border-radius: 15px 15px 0 0;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-variant: small-caps;
+    height: 75px;
+}
