@@ -101,7 +101,7 @@ h1{
     right: 20px;
 
 
-    cursor: none;
+    cursor: pointer;
 }
 
 /* ----- Pied de Page ----- */
@@ -119,6 +119,7 @@ footer p{
     font-size: 1.6rem;
     font-variant: small-caps;
     height: 75px;
+    margin-bottom: 0px;
 }
 
 /* ----- Nav Médias Sociaux ----- */
@@ -147,4 +148,34 @@ footer p{
 .media img:hover{
     position: relative;
     left: 3px;
+}
+
+/* ----- Modale ----- */
+
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 80%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoom{
+    height: 600px;
+    width: 800px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.visible{
+    display: flex;
 }
